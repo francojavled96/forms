@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1>Formularios en HTML</h1>
+
+    <p>
+        Los formularios permiten que los usuarios ingresen información
+        y la envíen a un sitio web.
+    </p>
+
+    <h2>¿Para qué sirven?</h2>
+
+    <p>
+        Los formularios se utilizan para registrarse, iniciar sesión,
+        enviar consultas, realizar búsquedas y completar diferentes
+        tipos de información.
+    </p>
+
+    <h2>Datos personales</h2>
+
+    <p>
+        En un formulario podemos solicitar datos como nombre, apellido,
+        edad, correo electrónico y número de teléfono.
+    </p>
+
+    <h2>Tipos de información</h2>
+
+    <p>
+        HTML permite utilizar diferentes elementos para que el usuario
+        pueda ingresar o seleccionar información.
+    </p>
+
+    <h3>Algunos ejemplos</h3>
+
+    <ul>
+        <li>Texto</li>
+        <li>Números</li>
+        <li>Contraseñas</li>
+        <li>Opciones</li>
+        <li>Fechas</li>
+        <li>Correos electrónicos</li>
+    </ul>
+
+    <h2>Formulario de contacto</h2>
+
+    <p>
+        A continuación voy a crear mi propio formulario utilizando
+        diferentes elementos de HTML.
+    </p>
+
+    <!-- EJERCICIO 1. FORMULARIO A  -->
+
+<form action="" target="_blank">
+
+
+          <label for="quantity">INGRESE UN NUMERO COMPRENDIDO ENTRE 1 Y 10</label><BR></BR>
+          <input type="number" id="quantity" name="quantity" min="1" max="100">
+
+          <input type="submit" value="Submit">
+
+
+</form>
+
+<br><br><br>
+
+
+<FORM>
+
+<label for="nombre">NOMBRE</label>
+<input type="text" pattern="[A-Za-z]+"> <br><br>
+
+
+<label for="apellido">APELLIDO</label>
+<input type="text" pattern="[A-Za-z]+"> <br><br>
+
+
+
+<label for="sexo">SEXO</label>
+
+<select name="sexo" id="sexo" required>
+<option value="Hombre">Hombre</option>
+<option value="mujer">Mujer</option>
+</select>
+<br><br>
+
+
+
+<label for="mail">EMAIL</label>
+<input type="email" name="mail" id="mail">
+<br><br>
+
+
+<label for="fechanac">FECHA NAC</label>
+<input type="datetime-local" name="fechanac" id="fechanac">
+
+
+<label for="mail">MAIL</label>
+<br><br>
+
+    <input type="submit" value="Submit">
+
+
+
+</FORM>
+</body>
+</html>
