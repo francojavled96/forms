@@ -70,6 +70,7 @@
 
 <br><br><br>
 
+ <!-- EJERCICIO 2. falta el contenedor y el estilo  -->
 
 <FORM>
 
@@ -108,6 +109,127 @@
 
 
 
+</FORM>  <br><br>
+
+
+ <!-- EJERCICIO 3.  -->
+
+<FORM>
+
+<label for="nombre">NOMBREEEE</label>
+<input type="text" pattern="[A-Za-z]+" minlength="4"  maxlength="20" size="30"> <br><br>
+
+<label for="EDAD">EDAD</label>
+<input type="number" name="EDAD" id="EDAD" min="18" max="30">
+
+<label for="mail">MAIL</label>
+<input type="email" name="mail" id="mail"minlength="5"  maxlength="20" size="30">
+
+
+<br><br>
+<input type="submit" value="Submit" >
+
 </FORM>
+
+ <!-- EJERCICIO 4  -->
+
+  <h1>Carga de CD</h1>
+
+    <form id="formCD">
+
+        <label for="nombreCD">Nombre del CD:</label>
+        <input type="text" id="nombreCD" required>
+        <br><br>
+
+        <label for="artista">Artista:</label>
+        <input type="text" id="artista" required>
+        <br><br>
+
+        <label for="anio">Año:</label>
+        <input type="number" id="anio" min="1900" max="2026" required>
+        <br><br>
+
+        <h2>AGRERGAR CANCIONES AL CD</h2>
+
+        <div id="canciones">
+            <!-- Acá aparecerán las canciones -->
+        </div>
+
+        <br>
+
+
+<label for="nombre">NOMBRE DE LA CANCION</label>
+<input type="text" pattern="[A-Za-z]+" minlength="4"  maxlength="20" size="30"> <br><br>
+
+<label for="compositor">COMPOSITOR</label>
+<input type="text" pattern="[A-Za-z]+" minlength="4"  maxlength="20" size="30"> <br><br>
+
+<label for="duracion">DURACION EN MINUTOS </label>
+<input type="number" name="duracion" id="duracion" min="1" max="10">
+
+<br><br>
+
+        <button type="submit">
+            GUARDAR
+        </button>
+
+        <button type="button" onclick="salir()">
+            SALIR
+        </button>
+
+    </form>
+
+
+ <!-- EJERCICIO 5  -->
+
+
+
+<h1>Agenda de contactos</h1>
+
+    <p>Complete los datos del contacto.</p>
+
+    <form>
+
+        <h2>Cargar contacto</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <br><br>
+
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" name="mail" required  minlength="5"  maxlength="20" size="30">
+
+        <br><br>
+
+        <h3>Teléfonos</h3>
+
+        <label for="telefono1">Teléfono 1:</label>
+        <input type="tel" id="telefono1" name="telefono1" required>
+
+        <br><br>
+
+        <label for="telefono2">Teléfono 2:</label>
+        <input type="tel" id="telefono2" name="telefono2">
+
+        <br><br>
+
+        <label for="telefono3">Teléfono 3:</label>
+        <input type="tel" id="telefono3" name="telefono3">
+
+        <br><br>
+
+        <input type="submit" value="Cargar contacto">
+        <input type="reset" value="Limpiar">
+
+    </form>
+
+
+
 </body>
 </html>
